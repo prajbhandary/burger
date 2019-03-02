@@ -5,7 +5,7 @@ var express = require ('express')
 //var methodOverride = require ('method-override')
 
 
-var Port  = process.env.Port || 8080;
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -26,6 +26,6 @@ app.use(routes)
 
 //start server
 
-app.listen(Port,function(){
-    console.log("Server Starting at Port :" + Port)
+app.listen(port,function(){
+    console.log("Server Starting at Port :" + port)
 })
