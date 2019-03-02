@@ -1,13 +1,15 @@
- <!-- image goes here
-                <img src ="/static/assets/img/something.jpg" alt="picture" class="image" >
-                                                   -->
+ <center><img  src="/assets/img/burger1.gif" alt="Burger">  </center>
  <div class ="container" id ="inside">
-<center><h1>Eat-da-burger</h1></center>
+<center>
+       
+    <h1>Eat-da-burger</h1>
+</center>
 <main>
     <div class ="container">
         <div class ="row">
                 <!-- burgers ready -->  
-            <div class = "col-md-6">
+                <div class = "col-md-2"></div>
+            <div class = "col-md-4">
                 </br></br>
                 <h3>Burgers ready to be Devoured </h3> 
                 {{#each burgers}}
@@ -19,7 +21,7 @@
                 {{/each}}
             </div>
                 <!--  ready to be devoured -->
-            <div class = "col-md-6">
+            <div class = "col-md-4">
                 </br></br>
                  <h3>Devoured</h3>
                 {{#each burgers}}
@@ -30,6 +32,7 @@
                     {{/if}}
                 {{/each}}
             </div>
+                 <div class = "col-md-2"></div>
         </div>
     </div>
 </main>  
@@ -39,14 +42,15 @@
         <div class="row">
             <div class = "col-md-12">
                <center>
-                    <h3>Enter a name of a Burger</h3>
+                    <h3> The name of the Burger</h3>
                     <form action ="/" class ="add-burger">
                             <input type="text" id="add-name" name="burger_name">
-                            <button  class="add-form" type="submit">Submit Order</button>
+                            <button  class="add-form" type="submit">Submit Order</button> 
                     </form>
                 </center>
             </div>
         </div>
+        <br/>
     </div>
 
 </main>

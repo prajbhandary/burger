@@ -11,7 +11,7 @@ var app = express();
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ exteded: true }));
-app.use(express.json());
+app.use(express.json()); 
 
 
 //handlebars
